@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, rgb(93, 183, 215) 100%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.form-wrapper {
+  min-height: 100vh;
+
+  .card {
+    box-shadow: 0px 0px 20px rgb(155, 155, 155);
+  }
+
+  .input-number {
+    width: 100%;
+    text-align: end;
+    padding: 6px 12px;
+    font-size: 16px;
+  }
 }
