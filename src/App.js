@@ -30,13 +30,13 @@ function App() {
     setB(Math.round(result))
   }
 
-  const getThree = (i, a, b) => {
-    const result = ((i - a - b) / 100) * 2.5
+  const getThree = (i, a) => {
+    const result = ((i - a) / 100) * 2.5
     setC(Math.round(result))
   }
 
-  const getFour = (i, a, b, c) => {
-    const result = ((i - a - b - c) / 100) * 2.5
+  const getFour = (i, a) => {
+    const result = ((i - a) / 100) * 2.5
     setD(Math.round(result))
   }
 
@@ -48,8 +48,8 @@ function App() {
   useEffect(() => {
     getOne(input)
     getTwo(input, a)
-    getThree(input, a, b)
-    getFour(input, a, b, c)
+    getThree(input, a)
+    getFour(input, a)
     getTotal(a, b, c, d)
   }, [input, a, b, c, d])
 
