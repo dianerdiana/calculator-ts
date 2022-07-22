@@ -7,7 +7,7 @@ import {
   CardContent,
   Box,
   Divider,
-  Typography,
+  Typography
 } from '@mui/material'
 import NumberFormat from 'react-number-format'
 
@@ -26,7 +26,7 @@ function App() {
   }
 
   const getTwo = (i, a) => {
-    const result = ((i - a) / 100) * 5
+    const result = ((i - a) / 100) * 12.5
     setB(Math.round(result))
   }
 
